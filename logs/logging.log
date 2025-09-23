@@ -1,1 +1,202 @@
 [2025-09-22 16:01:37,150: INFO: main: welcome to our custom logging data science]
+[2025-09-23 16:06:37,332: INFO: main: >>>>>> stage data ingestion stage started <<<<<<]
+[2025-09-23 16:06:37,333: ERROR: main: [Errno 2] No such file or directory: 'D:\\Desktop\\MLOPS\\ds_wine_prediction\\src\\config\\config.yaml']
+Traceback (most recent call last):
+  File "D:\Desktop\MLOPS\ds_wine_prediction\main.py", line 9, in <module>
+    data_ingestion.initiate_data_ingestion()
+  File "D:\Desktop\MLOPS\ds_wine_prediction\src\datascience\pipeline\data_ingestion.py", line 12, in initiate_data_ingestion
+    config=ConfigurationManager()
+  File "D:\Desktop\MLOPS\ds_wine_prediction\src\datascience\config\configuration.py", line 11, in __init__
+    self.config=read_yaml(config_filepath)
+  File "D:\Desktop\MLOPS\ds_wine_prediction\src\datascience\utils\common.py", line 30, in read_yaml
+    raise e
+  File "D:\Desktop\MLOPS\ds_wine_prediction\src\datascience\utils\common.py", line 23, in read_yaml
+    with open(path) as yaml_file:
+FileNotFoundError: [Errno 2] No such file or directory: 'D:\\Desktop\\MLOPS\\ds_wine_prediction\\src\\config\\config.yaml'
+[2025-09-23 16:08:58,118: INFO: main: >>>>>> stage data ingestion stage started <<<<<<]
+[2025-09-23 16:08:58,118: ERROR: main: [Errno 2] No such file or directory: 'D:\\Desktop\\MLOPS\\ds_wine_prediction\\src\\config\\config.yaml']
+Traceback (most recent call last):
+  File "D:\Desktop\MLOPS\ds_wine_prediction\main.py", line 9, in <module>
+    data_ingestion.initiate_data_ingestion()
+  File "D:\Desktop\MLOPS\ds_wine_prediction\src\datascience\pipeline\data_ingestion.py", line 12, in initiate_data_ingestion
+    config=ConfigurationManager()
+  File "D:\Desktop\MLOPS\ds_wine_prediction\src\datascience\config\configuration.py", line 11, in __init__
+    self.config=read_yaml(config_filepath)
+  File "D:\Desktop\MLOPS\ds_wine_prediction\src\datascience\utils\common.py", line 30, in read_yaml
+    raise e
+  File "D:\Desktop\MLOPS\ds_wine_prediction\src\datascience\utils\common.py", line 23, in read_yaml
+    with open(path) as yaml_file:
+FileNotFoundError: [Errno 2] No such file or directory: 'D:\\Desktop\\MLOPS\\ds_wine_prediction\\src\\config\\config.yaml'
+[2025-09-23 16:11:41,617: INFO: main: >>>>>> stage data ingestion stage started <<<<<<]
+[2025-09-23 16:11:41,617: ERROR: main: [Errno 2] No such file or directory: 'D:\\Desktop\\MLOPS\\ds_wine_prediction\\src\\config\\config.yaml']
+Traceback (most recent call last):
+  File "D:\Desktop\MLOPS\ds_wine_prediction\main.py", line 9, in <module>
+    data_ingestion.initiate_data_ingestion()
+  File "D:\Desktop\MLOPS\ds_wine_prediction\src\datascience\pipeline\data_ingestion.py", line 12, in initiate_data_ingestion
+    config=ConfigurationManager()
+  File "D:\Desktop\MLOPS\ds_wine_prediction\src\datascience\config\configuration.py", line 40, in __init__
+    self.config = read_yaml(config_filepath)
+  File "D:\Desktop\MLOPS\ds_wine_prediction\src\datascience\utils\common.py", line 30, in read_yaml
+    raise e
+  File "D:\Desktop\MLOPS\ds_wine_prediction\src\datascience\utils\common.py", line 23, in read_yaml
+    with open(path) as yaml_file:
+FileNotFoundError: [Errno 2] No such file or directory: 'D:\\Desktop\\MLOPS\\ds_wine_prediction\\src\\config\\config.yaml'
+[2025-09-23 16:13:31,955: INFO: main: >>>>>> stage data ingestion stage started <<<<<<]
+[2025-09-23 16:13:31,971: ERROR: main: [Errno 2] No such file or directory: 'D:\\Desktop\\MLOPS\\ds_wine_prediction\\src\\config\\config.yaml']
+Traceback (most recent call last):
+  File "D:\Desktop\MLOPS\ds_wine_prediction\main.py", line 9, in <module>
+    data_ingestion.initiate_data_ingestion()
+  File "D:\Desktop\MLOPS\ds_wine_prediction\src\datascience\pipeline\data_ingestion.py", line 12, in initiate_data_ingestion
+    config=ConfigurationManager()
+  File "D:\Desktop\MLOPS\ds_wine_prediction\src\datascience\config\configuration.py", line 40, in __init__
+    self.config = read_yaml(config_filepath)
+  File "D:\Desktop\MLOPS\ds_wine_prediction\src\datascience\utils\common.py", line 30, in read_yaml
+    raise e
+  File "D:\Desktop\MLOPS\ds_wine_prediction\src\datascience\utils\common.py", line 23, in read_yaml
+    with open(path) as yaml_file:
+FileNotFoundError: [Errno 2] No such file or directory: 'D:\\Desktop\\MLOPS\\ds_wine_prediction\\src\\config\\config.yaml'
+[2025-09-23 16:15:21,957: INFO: main: >>>>>> stage data ingestion stage started <<<<<<]
+[2025-09-23 16:15:21,958: ERROR: main: [Errno 2] No such file or directory: 'D:\\Desktop\\MLOPS\\ds_wine_prediction\\src\\config\\config.yaml']
+Traceback (most recent call last):
+  File "D:\Desktop\MLOPS\ds_wine_prediction\main.py", line 9, in <module>
+    data_ingestion.initiate_data_ingestion()
+  File "D:\Desktop\MLOPS\ds_wine_prediction\src\datascience\pipeline\data_ingestion.py", line 12, in initiate_data_ingestion
+    config=ConfigurationManager()
+  File "D:\Desktop\MLOPS\ds_wine_prediction\src\datascience\config\configuration.py", line 76, in __init__
+    self.config = read_yaml(config_filepath)
+  File "D:\Desktop\MLOPS\ds_wine_prediction\src\datascience\utils\common.py", line 30, in read_yaml
+    raise e
+  File "D:\Desktop\MLOPS\ds_wine_prediction\src\datascience\utils\common.py", line 23, in read_yaml
+    with open(path) as yaml_file:
+FileNotFoundError: [Errno 2] No such file or directory: 'D:\\Desktop\\MLOPS\\ds_wine_prediction\\src\\config\\config.yaml'
+[2025-09-23 16:17:51,186: INFO: main: >>>>>> stage data ingestion stage started <<<<<<]
+[2025-09-23 16:17:51,186: ERROR: main: [Errno 2] No such file or directory: 'D:\\Desktop\\MLOPS\\ds_wine_prediction\\src\\config\\config.yaml']
+Traceback (most recent call last):
+  File "D:\Desktop\MLOPS\ds_wine_prediction\main.py", line 15, in <module>
+    data_ingestion.initiate_data_ingestion()
+  File "D:\Desktop\MLOPS\ds_wine_prediction\src\datascience\pipeline\data_ingestion.py", line 14, in initiate_data_ingestion
+    config=ConfigurationManager()
+  File "D:\Desktop\MLOPS\ds_wine_prediction\src\datascience\config\configuration.py", line 76, in __init__
+    self.config = read_yaml(config_filepath)
+  File "D:\Desktop\MLOPS\ds_wine_prediction\src\datascience\utils\common.py", line 30, in read_yaml
+    raise e
+  File "D:\Desktop\MLOPS\ds_wine_prediction\src\datascience\utils\common.py", line 23, in read_yaml
+    with open(path) as yaml_file:
+FileNotFoundError: [Errno 2] No such file or directory: 'D:\\Desktop\\MLOPS\\ds_wine_prediction\\src\\config\\config.yaml'
+[2025-09-23 16:19:20,407: INFO: main: >>>>>> stage data ingestion stage started <<<<<<]
+[2025-09-23 16:19:20,409: INFO: common: YAML file loaded successfully: D:\Desktop\MLOPS\ds_wine_prediction\config\config.yaml]
+[2025-09-23 16:19:20,410: INFO: common: YAML file loaded successfully: D:\Desktop\MLOPS\ds_wine_prediction\params.yaml]
+[2025-09-23 16:19:20,421: INFO: common: YAML file loaded successfully: D:\Desktop\MLOPS\ds_wine_prediction\schema.yaml]
+[2025-09-23 16:19:20,421: INFO: common: Directory created or already exists: artifacts]
+[2025-09-23 16:19:20,422: INFO: common: Directory created or already exists: artifacts/data_ingestion]
+[2025-09-23 16:19:20,422: INFO: data_ingestion: File already exists at artifacts/data_ingestion/data.zip]
+[2025-09-23 16:19:20,431: INFO: data_ingestion: Extraction completed. Files are available at: artifacts/data_ingestion]
+[2025-09-23 16:19:20,432: INFO: main: >>>>>>> stage data ingestion stage empleted<<<<<<]
+[2025-09-23 17:00:35,543: INFO: common: YAML file loaded successfully: D:\Desktop\MLOPS\ds_wine_prediction\config\config.yaml]
+[2025-09-23 17:00:35,545: INFO: common: YAML file loaded successfully: D:\Desktop\MLOPS\ds_wine_prediction\params.yaml]
+[2025-09-23 17:00:35,568: INFO: common: YAML file loaded successfully: D:\Desktop\MLOPS\ds_wine_prediction\schema.yaml]
+[2025-09-23 17:00:35,568: INFO: common: Directory created or already exists: artifacts]
+[2025-09-23 17:01:27,014: INFO: common: YAML file loaded successfully: D:\Desktop\MLOPS\ds_wine_prediction\config\config.yaml]
+[2025-09-23 17:01:27,015: INFO: common: YAML file loaded successfully: D:\Desktop\MLOPS\ds_wine_prediction\params.yaml]
+[2025-09-23 17:01:27,026: INFO: common: YAML file loaded successfully: D:\Desktop\MLOPS\ds_wine_prediction\schema.yaml]
+[2025-09-23 17:01:27,030: INFO: common: Directory created or already exists: artifacts]
+[2025-09-23 17:02:26,372: INFO: common: YAML file loaded successfully: D:\Desktop\MLOPS\ds_wine_prediction\config\config.yaml]
+[2025-09-23 17:02:26,377: INFO: common: YAML file loaded successfully: D:\Desktop\MLOPS\ds_wine_prediction\params.yaml]
+[2025-09-23 17:02:26,386: INFO: common: YAML file loaded successfully: D:\Desktop\MLOPS\ds_wine_prediction\schema.yaml]
+[2025-09-23 17:02:26,390: INFO: common: Directory created or already exists: artifacts]
+[2025-09-23 17:02:26,391: INFO: common: Directory created or already exists: artifacts/data_ingestion]
+[2025-09-23 17:03:10,212: INFO: common: YAML file loaded successfully: D:\Desktop\MLOPS\ds_wine_prediction\config\config.yaml]
+[2025-09-23 17:03:10,221: INFO: common: YAML file loaded successfully: D:\Desktop\MLOPS\ds_wine_prediction\params.yaml]
+[2025-09-23 17:03:10,228: INFO: common: YAML file loaded successfully: D:\Desktop\MLOPS\ds_wine_prediction\schema.yaml]
+[2025-09-23 17:03:10,231: INFO: common: Directory created or already exists: artifacts]
+[2025-09-23 17:03:10,236: INFO: common: Directory created or already exists: artifacts/data_ingestion]
+[2025-09-23 17:05:30,308: INFO: common: YAML file loaded successfully: D:\Desktop\MLOPS\ds_wine_prediction\config\config.yaml]
+[2025-09-23 17:05:30,314: INFO: common: YAML file loaded successfully: D:\Desktop\MLOPS\ds_wine_prediction\params.yaml]
+[2025-09-23 17:05:30,324: INFO: common: YAML file loaded successfully: D:\Desktop\MLOPS\ds_wine_prediction\schema.yaml]
+[2025-09-23 17:05:30,324: INFO: common: Directory created or already exists: artifacts]
+[2025-09-23 17:05:30,332: INFO: common: Directory created or already exists: artifacts/data_ingestion]
+[2025-09-23 17:06:38,775: INFO: common: YAML file loaded successfully: D:\Desktop\MLOPS\ds_wine_prediction\config\config.yaml]
+[2025-09-23 17:06:38,778: INFO: common: YAML file loaded successfully: D:\Desktop\MLOPS\ds_wine_prediction\params.yaml]
+[2025-09-23 17:06:38,786: INFO: common: YAML file loaded successfully: D:\Desktop\MLOPS\ds_wine_prediction\schema.yaml]
+[2025-09-23 17:06:38,795: INFO: common: Directory created or already exists: artifacts]
+[2025-09-23 17:06:38,797: INFO: common: Directory created or already exists: artifacts/data_validation]
+[2025-09-23 17:08:22,656: INFO: common: YAML file loaded successfully: D:\Desktop\MLOPS\ds_wine_prediction\config\config.yaml]
+[2025-09-23 17:08:22,662: INFO: common: YAML file loaded successfully: D:\Desktop\MLOPS\ds_wine_prediction\params.yaml]
+[2025-09-23 17:08:22,670: INFO: common: YAML file loaded successfully: D:\Desktop\MLOPS\ds_wine_prediction\schema.yaml]
+[2025-09-23 17:08:22,675: INFO: common: Directory created or already exists: artifacts]
+[2025-09-23 17:08:22,678: INFO: common: Directory created or already exists: artifacts/data_validation]
+[2025-09-23 17:08:35,035: INFO: common: YAML file loaded successfully: D:\Desktop\MLOPS\ds_wine_prediction\config\config.yaml]
+[2025-09-23 17:08:35,041: INFO: common: YAML file loaded successfully: D:\Desktop\MLOPS\ds_wine_prediction\params.yaml]
+[2025-09-23 17:08:35,049: INFO: common: YAML file loaded successfully: D:\Desktop\MLOPS\ds_wine_prediction\schema.yaml]
+[2025-09-23 17:08:35,049: INFO: common: Directory created or already exists: artifacts]
+[2025-09-23 17:08:35,054: INFO: common: Directory created or already exists: artifacts/data_validation]
+[2025-09-23 17:11:43,698: INFO: common: YAML file loaded successfully: D:\Desktop\MLOPS\ds_wine_prediction\config\config.yaml]
+[2025-09-23 17:11:43,708: INFO: common: YAML file loaded successfully: D:\Desktop\MLOPS\ds_wine_prediction\params.yaml]
+[2025-09-23 17:11:43,718: INFO: common: YAML file loaded successfully: D:\Desktop\MLOPS\ds_wine_prediction\schema.yaml]
+[2025-09-23 17:11:43,722: INFO: common: Directory created or already exists: artifacts]
+[2025-09-23 17:11:43,727: INFO: common: Directory created or already exists: artifacts/data_validation]
+[2025-09-23 17:12:13,516: INFO: common: YAML file loaded successfully: D:\Desktop\MLOPS\ds_wine_prediction\config\config.yaml]
+[2025-09-23 17:12:13,521: INFO: common: YAML file loaded successfully: D:\Desktop\MLOPS\ds_wine_prediction\params.yaml]
+[2025-09-23 17:12:13,530: INFO: common: YAML file loaded successfully: D:\Desktop\MLOPS\ds_wine_prediction\schema.yaml]
+[2025-09-23 17:12:13,533: INFO: common: Directory created or already exists: artifacts]
+[2025-09-23 17:12:13,534: INFO: common: Directory created or already exists: artifacts/data_validation]
+[2025-09-23 17:39:34,071: INFO: main: >>>>>> stage data ingestion stage started <<<<<<]
+[2025-09-23 17:39:34,078: INFO: common: YAML file loaded successfully: D:\Desktop\MLOPS\ds_wine_prediction\config\config.yaml]
+[2025-09-23 17:39:34,078: INFO: common: YAML file loaded successfully: D:\Desktop\MLOPS\ds_wine_prediction\params.yaml]
+[2025-09-23 17:39:34,088: INFO: common: YAML file loaded successfully: D:\Desktop\MLOPS\ds_wine_prediction\schema.yaml]
+[2025-09-23 17:39:34,088: INFO: common: Directory created or already exists: artifacts]
+[2025-09-23 17:39:34,093: INFO: common: Directory created or already exists: artifacts/data_ingestion]
+[2025-09-23 17:39:34,093: INFO: data_ingestion: File already exists at artifacts/data_ingestion/data.zip]
+[2025-09-23 17:39:34,101: INFO: data_ingestion: Extraction completed. Files are available at: artifacts/data_ingestion]
+[2025-09-23 17:39:34,101: INFO: main: >>>>>>> stage data ingestion stage empleted<<<<<<]
+[2025-09-23 17:39:34,101: INFO: main: >>>>>> stage data validation stage started <<<<<<]
+[2025-09-23 17:39:34,109: INFO: common: YAML file loaded successfully: D:\Desktop\MLOPS\ds_wine_prediction\config\config.yaml]
+[2025-09-23 17:39:34,109: INFO: common: YAML file loaded successfully: D:\Desktop\MLOPS\ds_wine_prediction\params.yaml]
+[2025-09-23 17:39:34,120: INFO: common: YAML file loaded successfully: D:\Desktop\MLOPS\ds_wine_prediction\schema.yaml]
+[2025-09-23 17:39:34,120: INFO: common: Directory created or already exists: artifacts]
+[2025-09-23 17:39:34,120: INFO: common: Directory created or already exists: artifacts/data_validation]
+[2025-09-23 17:39:34,120: ERROR: main: 'DataValidation' object has no attribute 'download_file']
+Traceback (most recent call last):
+  File "D:\Desktop\MLOPS\ds_wine_prediction\main.py", line 27, in <module>
+    data_validation.initiate_data_validation()
+  File "D:\Desktop\MLOPS\ds_wine_prediction\src\datascience\pipeline\data_validation_pipeline.py", line 16, in initiate_data_validation
+    data_validation.download_file()
+AttributeError: 'DataValidation' object has no attribute 'download_file'
+[2025-09-23 17:46:13,968: INFO: main: >>>>>> stage data ingestion stage started <<<<<<]
+[2025-09-23 17:46:13,976: INFO: common: YAML file loaded successfully: D:\Desktop\MLOPS\ds_wine_prediction\config\config.yaml]
+[2025-09-23 17:46:13,984: INFO: common: YAML file loaded successfully: D:\Desktop\MLOPS\ds_wine_prediction\params.yaml]
+[2025-09-23 17:46:13,986: INFO: common: YAML file loaded successfully: D:\Desktop\MLOPS\ds_wine_prediction\schema.yaml]
+[2025-09-23 17:46:13,993: INFO: common: Directory created or already exists: artifacts]
+[2025-09-23 17:46:13,995: INFO: common: Directory created or already exists: artifacts/data_ingestion]
+[2025-09-23 17:46:13,995: INFO: data_ingestion: File already exists at artifacts/data_ingestion/data.zip]
+[2025-09-23 17:46:14,000: INFO: data_ingestion: Extraction completed. Files are available at: artifacts/data_ingestion]
+[2025-09-23 17:46:14,000: INFO: main: >>>>>>> stage data ingestion stage empleted<<<<<<]
+[2025-09-23 17:46:14,003: INFO: main: >>>>>> stage data validation stage started <<<<<<]
+[2025-09-23 17:46:14,004: INFO: common: YAML file loaded successfully: D:\Desktop\MLOPS\ds_wine_prediction\config\config.yaml]
+[2025-09-23 17:46:14,010: INFO: common: YAML file loaded successfully: D:\Desktop\MLOPS\ds_wine_prediction\params.yaml]
+[2025-09-23 17:46:14,018: INFO: common: YAML file loaded successfully: D:\Desktop\MLOPS\ds_wine_prediction\schema.yaml]
+[2025-09-23 17:46:14,021: INFO: common: Directory created or already exists: artifacts]
+[2025-09-23 17:46:14,021: INFO: common: Directory created or already exists: artifacts/data_validation]
+[2025-09-23 17:46:14,023: ERROR: main: 'DataValidation' object has no attribute 'alidate_all_column']
+Traceback (most recent call last):
+  File "D:\Desktop\MLOPS\ds_wine_prediction\main.py", line 27, in <module>
+    data_validation.initiate_data_validation()
+  File "D:\Desktop\MLOPS\ds_wine_prediction\src\datascience\pipeline\data_validation_pipeline.py", line 16, in initiate_data_validation
+    data_validation.alidate_all_column()
+AttributeError: 'DataValidation' object has no attribute 'alidate_all_column'
+[2025-09-23 17:46:51,944: INFO: main: >>>>>> stage data ingestion stage started <<<<<<]
+[2025-09-23 17:46:51,950: INFO: common: YAML file loaded successfully: D:\Desktop\MLOPS\ds_wine_prediction\config\config.yaml]
+[2025-09-23 17:46:51,950: INFO: common: YAML file loaded successfully: D:\Desktop\MLOPS\ds_wine_prediction\params.yaml]
+[2025-09-23 17:46:51,961: INFO: common: YAML file loaded successfully: D:\Desktop\MLOPS\ds_wine_prediction\schema.yaml]
+[2025-09-23 17:46:51,961: INFO: common: Directory created or already exists: artifacts]
+[2025-09-23 17:46:51,961: INFO: common: Directory created or already exists: artifacts/data_ingestion]
+[2025-09-23 17:46:51,961: INFO: data_ingestion: File already exists at artifacts/data_ingestion/data.zip]
+[2025-09-23 17:46:51,971: INFO: data_ingestion: Extraction completed. Files are available at: artifacts/data_ingestion]
+[2025-09-23 17:46:51,971: INFO: main: >>>>>>> stage data ingestion stage empleted<<<<<<]
+[2025-09-23 17:46:51,974: INFO: main: >>>>>> stage data validation stage started <<<<<<]
+[2025-09-23 17:46:51,979: INFO: common: YAML file loaded successfully: D:\Desktop\MLOPS\ds_wine_prediction\config\config.yaml]
+[2025-09-23 17:46:51,981: INFO: common: YAML file loaded successfully: D:\Desktop\MLOPS\ds_wine_prediction\params.yaml]
+[2025-09-23 17:46:51,989: INFO: common: YAML file loaded successfully: D:\Desktop\MLOPS\ds_wine_prediction\schema.yaml]
+[2025-09-23 17:46:51,992: INFO: common: Directory created or already exists: artifacts]
+[2025-09-23 17:46:51,994: INFO: common: Directory created or already exists: artifacts/data_validation]
+[2025-09-23 17:46:52,044: INFO: main: >>>>>>> stage data validation stage empleted<<<<<<]

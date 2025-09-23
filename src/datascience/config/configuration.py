@@ -1,0 +1,119 @@
+# from src.datascience.constants import *
+# from src.datascience.constants import CONFIG_FILE_PATH
+# from src.datascience.utils.common import read_yaml,create_directories
+# from src.datascience.entity.config_entity import (DataIngestionConfig)
+
+# class ConfigurationManager:
+#     def __init__(self,
+#                  config_filepath=CONFIG_FILE_PATH,
+#                  params_filepath=PARAMS_FILE_PATH,
+#                  schema_filepath=SCHEMA_FILE_PATH):
+#         self.config=read_yaml(config_filepath)
+#         self.params=read_yaml(params_filepath)
+#         self.schema=read_yaml(schema_filepath)
+
+#         create_directories([self.config['artifacts_root']])
+
+
+#     def get_data_ingestion_config(self)->DataIngestionConfig:
+#         config=self.config['data_ingestion']
+#         create_directories([config.root_dir])
+
+#         data_ingestion_config=DataIngestionConfig(
+#             root_dir=config.root_dir,
+#             source_URL=config.source_URL,
+#             local_data_file=config.local_data_file,
+#             unzip_dir=config.unzip_dir
+#         )
+#         return data_ingestion_config
+
+# from src.datascience.constants import CONFIG_FILE_PATH, PARAMS_FILE_PATH, SCHEMA_FILE_PATH
+# from src.datascience.utils.common import read_yaml, create_directories
+# from src.datascience.entity.config_entity import DataIngestionConfig
+
+# class ConfigurationManager:
+#     def __init__(self,
+#                  config_filepath=CONFIG_FILE_PATH,
+#                  params_filepath=PARAMS_FILE_PATH,
+#                  schema_filepath=SCHEMA_FILE_PATH):
+#         # load YAML files
+#         self.config = read_yaml(config_filepath)
+#         self.params = read_yaml(params_filepath)
+#         self.schema = read_yaml(schema_filepath)
+
+
+#         # create artifacts directory
+#         create_directories([self.config['artifacts_root']])
+
+#     def get_data_ingestion_config(self) -> DataIngestionConfig:
+#         config = self.config['data_ingestion']
+#         create_directories([config['root_dir']])
+
+#         data_ingestion_config = DataIngestionConfig(
+#             root_dir=config['root_dir'],
+#             source_URL=config['source_URL'],
+#             local_data_file=config['local_data_file'],
+#             unzip_dir=config['unzip_dir']
+#         )
+#         return data_ingestion_config
+
+
+from src.datascience.constants import CONFIG_FILE_PATH, PARAMS_FILE_PATH, SCHEMA_FILE_PATH
+from src.datascience.utils.common import read_yaml, create_directories
+from src.datascience.entity.config_entity import (DataIngestionConfig,DataValidationConfig)
+
+
+class ConfigurationManager:
+    """
+    Reads configuration, params, and schema YAML files and provides 
+    configuration objects for different stages of the pipeline.
+    """
+    def __init__(self,
+                 config_filepath=CONFIG_FILE_PATH,
+                 params_filepath=PARAMS_FILE_PATH,
+                 schema_filepath=SCHEMA_FILE_PATH):
+
+        # Load YAML files
+        self.config = read_yaml(config_filepath)
+        self.params = read_yaml(params_filepath)
+        self.schema = read_yaml(schema_filepath)
+
+        # Create artifacts root directory if not exists
+        artifacts_root = self.config.get('artifacts_root')
+        if artifacts_root is not None:
+            create_directories([artifacts_root])
+
+    def get_data_ingestion_config(self) -> DataIngestionConfig:
+        """
+        Reads data ingestion config from the config YAML and returns
+        a DataIngestionConfig object.
+        """
+        data_ingestion_cfg = self.config.get('data_ingestion')
+        if data_ingestion_cfg is None:
+            raise ValueError("data_ingestion section missing in config.yaml")
+
+        # Create root directory for data ingestion
+        root_dir = data_ingestion_cfg.get('root_dir')
+        if root_dir:
+            create_directories([root_dir])
+
+        return DataIngestionConfig(
+            root_dir=root_dir,
+            source_URL=data_ingestion_cfg.get('source_URL'),
+            local_data_file=data_ingestion_cfg.get('local_data_file'),
+            unzip_dir=data_ingestion_cfg.get('unzip_dir')
+        )
+    
+    def get_data_validation_config(self)->DataValidationConfig:
+        config=self.config.data_validation
+        schema=self.schema.COLUMNS
+
+        create_directories([config.root_dir])
+
+        data_validation_config=DataValidationConfig(
+            root_dir=config.root_dir,
+            STATUS_FILE=config.STATUS_FILE,
+            unzip_data_dir=config.unzip_data_dir,
+            all_schema=schema
+        )
+        return data_validation_config
