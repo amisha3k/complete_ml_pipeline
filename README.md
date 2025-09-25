@@ -19,8 +19,8 @@ This project demonstrates the development of a **complete machine learning pipel
 - **Integration with DagsHub**:  
   Demonstrates remote tracking of MLflow experiments, artifact storage, and model management, ensuring seamless collaboration and version control.
 
-- **Prediction & Deployment Ready**:  
-  Provides a framework for serving models and performing predictions, ready for deployment to local or cloud environments.
+- **Prediction Ready**:  
+  Provides a framework for serving models and performing predictions.
 
 ## Summary
 
