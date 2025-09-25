@@ -3,6 +3,7 @@ from src.datascience.pipeline.data_ingestion_pipeline import DataIngestionTraini
 from src.datascience.pipeline.data_validation_pipeline import DataValidationTrainingPipeline
 from src.datascience.pipeline.data_transformation_pipeline import DataTransformationTrainingPipeline
 from src.datascience.pipeline.model_trainer_pipeline import ModelTrainerTrainingPipeline
+from src.datascience.pipeline.model_evaluation_pipeline import ModelEvaluationTrainingPipeline
 from src.datascience.constants import CONFIG_FILE_PATH, PARAMS_FILE_PATH, SCHEMA_FILE_PATH
 
 print("CONFIG:", CONFIG_FILE_PATH, CONFIG_FILE_PATH.exists())
@@ -52,4 +53,15 @@ try:
 except Exception as e:
         logger.exception(e)
         raise e  
+
+STAGE_NAME="model evaluation stage"
+
+try:
+        logger.info(f">>>>>> stage {STAGE_NAME} started <<<<<<")
+        model_evaluation=ModelEvaluationTrainingPipeline() 
+        model_evaluation.initiate_model_evaluation()
+        logger.info(f">>>>>>> stage {STAGE_NAME} empleted<<<<<<")
+except Exception as e:
+        logger.exception(e)
+        raise e        
 
