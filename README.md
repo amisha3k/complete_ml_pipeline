@@ -22,9 +22,9 @@ This project demonstrates the development of a **complete machine learning pipel
 - **Prediction Ready**:  
   Provides a framework for serving models and performing predictions.
 
-## Summary
+ **Dataset Context:**  
+ This project uses a **wine quality dataset** containing physicochemical properties of wines, such as acidity, sugar, pH, sulphates, and alcohol          content. The goal is to predict wine quality based on these features, serving as a practical example for building an end-to-end MLOps pipeline.
 
-This project highlights **end-to-end MLOps skills**, including structured pipeline design, experiment tracking, artifact management, and practical use of MLflow and DagsHub for collaborative machine learning workflows.
 
 
 ##Workflow--ML pipeline
