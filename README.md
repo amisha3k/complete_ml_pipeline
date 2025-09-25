@@ -23,11 +23,12 @@ This project demonstrates the development of a **complete machine learning pipel
   Provides a framework for serving models and performing predictions.
 
  **Dataset Context:**  
+ 
  This project uses a **wine quality dataset** containing physicochemical properties of wines, such as acidity, sugar, pH, sulphates, and alcohol          content. The goal is to predict wine quality based on these features, serving as a practical example for building an end-to-end MLOps pipeline.
 
 
 
-##Workflow--ML pipeline
+# Workflow--ML pipeline
 
 1. Data Ingestion
 2. Data Validation
@@ -35,7 +36,7 @@ This project demonstrates the development of a **complete machine learning pipel
 4. Model Trainer
 5. Model Evaluation
 
-#updation part
+# updation part
 
 1. update config.yaml
 2. update schema.yaml
